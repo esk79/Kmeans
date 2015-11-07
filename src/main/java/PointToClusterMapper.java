@@ -10,6 +10,10 @@ import java.io.IOException;
  * centroids have been correctly initialized.
  * Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT>
  */
-public class PointToClusterMapper extends Mapper<Text, Text, Text, Text> {
+public class PointToClusterMapper extends Mapper<Text, Text, IntWritable, Point> {
+    public void map(Text key, Text value, Context context)
+            throws IOException, InterruptedException
+    {
+    }
 
 }
