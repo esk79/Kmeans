@@ -91,7 +91,7 @@ public class Point implements WritableComparable<Point> {
         if (dimension != o.dimension) {
             throw new IllegalArgumentException("Not the same dimensions.");
         }
-        double error = 0.000001;
+        double error = 0.0001;
         for (int i = 0; i < dimension; i++) {
             double diff = pointList.get(i) - o.pointList.get(i);
             if (diff > error) return 1;

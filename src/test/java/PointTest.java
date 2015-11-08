@@ -6,11 +6,11 @@ import static org.junit.Assert.*;
  * Created by EvanKing on 11/6/15.
  */
 public class PointTest {
-    public static final double error = .00001;
-    //@Test
+    public static final double error = .0001;
+    @Test
      public void test_tostring(){
         Point p = new Point("1 2 3");
-        assertEquals("1 2 3", p.toString());
+        assertEquals("1.0 2.0 3.0", p.toString());
     }
 
     @Test
